@@ -3,9 +3,11 @@
         <div class="wrap">
             <button class="previous-button" v-on:click="$emit('previousPage')" >return</button>
 
-        <h2 id="site-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto minus
-            natus, neque omnis repudiandae sed soluta. Blanditiis corporis eaque excepturi, facere facilis ipsum maxime
-            nam nisi nobis odit tempore.</h2>
+            <h2 id="site-description">
+                When I first got into the online advertising business,
+                I was looking for the magical combination <em>that would</em> put my website into the top search engine rankings,
+                catapult me to the forefront of the minds or individuals looking to buy my product.
+            </h2>
 
             <button class="next-button"     v-on:click="$emit('nextPage')"     >continue</button>
         </div>
