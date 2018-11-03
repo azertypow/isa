@@ -1,11 +1,11 @@
 <template>
-    <div id="app" :class="currentPageClassname" class="v-pages-wrap">
+    <div id="app" :class="currentPageName" class="v-pages-wrap">
         <app-menu
                 title="Isa Jaquier&#8209;Borella"
+                :pageName="this.currentPageName"
         />
 
         <Home
-                msg="Welcome to Your Vue.js + TypeScript App"
                 v-on:nextPage="getNextPage"
                 v-on:previousPage="getPreviousPage"
         />
@@ -35,16 +35,16 @@
   export default class App extends Vue {
     private application = new Application(0)
 
-    private currentPageClassname = this.application.currentPage
+    private currentPageName = this.application.currentPage
 
     private getNextPage() {
       console.log(this.application.nextPage)
-      this.currentPageClassname = this.application.nextPage
+      this.currentPageName = this.application.nextPage
     }
 
     private getPreviousPage() {
       console.log(this.application.previousPage)
-      this.currentPageClassname = this.application.previousPage
+      this.currentPageName = this.application.previousPage
     }
   }
 </script>
