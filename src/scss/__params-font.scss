@@ -1,0 +1,21 @@
+@mixin font-xxl {
+  font-size: 2.5em;
+  line-height: 1.25em;
+  font-weight: 600;
+}
+
+@mixin font-xl {}
+
+@mixin font-l {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 500;
+}
+
+@mixin font-m {
+  font-weight: 700;
+}
+
+@mixin font-reg {
+
+}

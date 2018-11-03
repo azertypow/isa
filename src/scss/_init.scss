@@ -1,4 +1,5 @@
-@import "_parameters";
+@import "_params";
+@import "_params-font";
 
 html,
 body {
@@ -11,17 +12,24 @@ body {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
+  color: $color-dark;
   background-color: $color-dark;
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1.25em;
-  font-weight: 600;
+  @include font-xxl;
 }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.25em;
-  font-weight: 500;
+
+}
+
+p {
+  @include font-l
+}
+
+em, a {
+  text-decoration: none;
+  font-style: inherit;
+  color: $color-main;
 }

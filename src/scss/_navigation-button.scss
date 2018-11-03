@@ -1,13 +1,6 @@
-.next-button {
-  position: absolute;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
+.next-button,
 .previous-button {
-  position: absolute;
-  top: 1em;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  position: relative;
+  margin: auto;
 }
