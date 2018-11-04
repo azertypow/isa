@@ -1,4 +1,6 @@
-# site-isa
+# isa
+simple one page site using Vuejs
+
 
 ## Project setup
 ```
