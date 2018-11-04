@@ -1,21 +1,39 @@
+@import "_params";
+
 @mixin font-xxl {
   font-size: 2.5em;
-  line-height: 1.25em;
-  font-weight: 600;
+  line-height: 1em;
+  font-weight: 700;
 }
 
-@mixin font-xl {}
-
-@mixin font-l {
+@mixin font-xl {
   font-size: 2em;
   line-height: 1.25em;
   font-weight: 500;
 }
 
-@mixin font-m {
+@mixin font-l {
+  font-size: 1em;
+  line-height: 1.00em;
   font-weight: 700;
 }
 
-@mixin font-reg {
+@mixin font-m {
+  font-size: 1em;
+  line-height: 1.25em;
+  font-weight: 600;
+}
 
+@mixin font-reg {
+  font-size: 1em;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+
+@mixin font-init {
+  @include font-reg;
+  font-size: $font-size;
+  font-family: 'Poppins Latin', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

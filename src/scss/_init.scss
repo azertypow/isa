@@ -1,23 +1,20 @@
 @import "_params";
 @import "_params-fonts";
 
+
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @include font-init;
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins Latin', Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.5em;
-  font-weight: 400;
   color: $color-dark;
   background-color: $color-dark;
 }
+html {font-size: $font-size}
 
 h1 {
-  @include font-xxl;
+  @include font-l;
 }
 
 h2 {
@@ -25,11 +22,17 @@ h2 {
 }
 
 p {
-  @include font-l
+  @include font-xl;
+  line-height: 1.5;
 }
 
-em, a {
-  text-decoration: none;
+em {
   font-style: inherit;
   color: $color-main;
+}
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+  border-bottom: solid 2px $color-main;
 }
