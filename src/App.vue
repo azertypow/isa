@@ -1,11 +1,10 @@
 <template>
     <div id="app" :class="currentPageName" class="v-pages-wrap">
         <app-menu
-                title="Isa Jaquier&#8209;Borella"
                 :pageName="this.currentPageName"
         />
 
-        <Home
+        <Introduction
                 v-on:nextPage="getNextPage"
                 v-on:previousPage="getPreviousPage"
         />
@@ -20,7 +19,7 @@
 
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
-  import Home from "./components/Home.vue";
+  import Introduction from "./components/Introduction.vue";
   import AppMenu from "./components/appMenu/AppMenu.vue";
   import Description from "./components/description/Description.vue";
   import {Application} from "./Application/Application";
@@ -29,7 +28,7 @@
     components: {
       Description,
       AppMenu,
-      Home,
+      Introduction,
     },
   })
   export default class App extends Vue {

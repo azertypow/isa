@@ -5,7 +5,7 @@ export class Application {
   private _currentPageIndex: number
 
   private _ARRAY_OF_PAGES = [
-    LIST_OF_PAGES.HOME,
+    LIST_OF_PAGES.INTRODUCTION,
     LIST_OF_PAGES.DESCRIPTION,
   ]
 

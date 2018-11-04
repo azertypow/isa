@@ -1,4 +1,4 @@
 export enum LIST_OF_PAGES {
-  HOME        = "home",
+  INTRODUCTION        = "introduction",
   DESCRIPTION = "description",
 }

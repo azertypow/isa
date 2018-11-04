@@ -1,11 +1,28 @@
 <template>
     <section class="v-app-menu" >
-        <h1 id="site-title" v-html="this.title"></h1>
+        <h1 id="site-title">
+            Isa<br>Jaquier&#8209;Borella
+        </h1>
+
         <div id="site-page-name">{{this.pageName}}</div>
+
         <div id="site-lang-wrap">
             <button>Fr</button>
             <button>En</button>
             <button>It</button>
+        </div>
+
+        <div id="page-position">
+            <div class="introduction">introduction</div>
+            <div class="description">déscription</div>
+            <div class="contact">contact</div>
+            <div class="quotation">devis</div>
+        </div>
+
+        <div id="social-share">
+            <div>share it!</div>
+            <div class="twitter"><a href="#">twitter</a></div>
+            <div class="facebook"><a href="#">facebook</a></div>
         </div>
     </section>
 </template>
@@ -15,13 +32,13 @@
 
   @Component
     export default class AppMenu extends Vue {
-        @Prop({required: true, type: String}) private title?: string
         @Prop({required: true, type: String}) private pageName?: string
     }
 </script>
 
 <style lang="scss">
     @import "../../scss/_params";
+    @import "../../scss/_params-fonts";
 
     .v-app-menu {
         transition: color 500ms ease-in-out;
@@ -36,7 +53,6 @@
             left: 0;
             margin: 0;
             transition: font-size 500ms ease-in-out, line-height 500ms ease-in-out;
-            font-size: 1em;
             user-select: none;
         }
 
@@ -51,21 +67,68 @@
         #site-lang-wrap {
             top: 0;
             right: 25%;
+            user-select: none;
+        }
+
+        #page-position {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            user-select: none;
+
+            > * {
+                padding: .5em 0;
+            }
+        }
+
+        #social-share {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            user-select: none;
+
+            > * {
+                padding: .5em 0;
+            }
         }
 
         /*
         * pages
         */
-        .home & {
+        .introduction & {
             color: $color-light;
 
             #site-title {
-                font-size: 2.5em;
+                @include font-xxl;
             }
 
             #site-page-name {
                 transition: opacity 250ms ease-in-out;
                 opacity: 0;
+            }
+
+            .introduction {
+                text-decoration: line-through;
+            }
+        }
+
+        .description & {
+            .description {
+                text-decoration: line-through;
+            }
+        }
+
+        .contact & {
+
+            .contact {
+                text-decoration: line-through;
+            }
+        }
+
+        .quotation & {
+
+            .quotation {
+                text-decoration: line-through;
             }
         }
     }
