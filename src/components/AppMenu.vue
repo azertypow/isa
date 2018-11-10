@@ -37,8 +37,8 @@
 </script>
 
 <style lang="scss">
-    @import "../../scss/_params";
-    @import "../../scss/_params-fonts";
+    @import "../scss/_params";
+    @import "../scss/_params-fonts";
 
     .v-app-menu {
         transition: color 500ms ease-in-out;

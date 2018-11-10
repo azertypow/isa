@@ -161,10 +161,10 @@
 </script>
 
 <style lang="scss">
-    @import "../../scss/pages";
-    @import "../../scss/_grid";
-    @import "../../scss/ui";
-    @import "../../scss/svg";
+    @import "../scss/pages";
+    @import "../scss/_grid";
+    @import "../scss/ui";
+    @import "../scss/svg";
 
     .v-description {
         @include page-element("white");

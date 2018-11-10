@@ -28,8 +28,8 @@
   import {Component, Vue} from "vue-property-decorator";
   import {Application} from "./Application/Application";
   import Introduction from "./components/Introduction.vue";
-  import AppMenu from "./components/appMenu/AppMenu.vue";
-  import Description from "./components/description/Description.vue";
+  import AppMenu from "./components/AppMenu.vue";
+  import Description from "./components/Description.vue";
   import Contact from "./components/Contact.vue";
 
   @Component({
