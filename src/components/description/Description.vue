@@ -55,7 +55,7 @@
                             205
                         </div>
                         <div class="desc">
-                            If you find yourself doing the <strong>same routine</strong> day after day.
+                            A farmer hears tales of diamonds and <strong>begins dreaming</strong> of vast riches.
                         </div>
                     </div>
                     <div class="column">
@@ -140,7 +140,7 @@
                             4
                         </div>
                         <div class="desc">
-                            If you find yourself doing the <strong>same routine</strong> day after day.
+                            When I was a young man, <strong>even a teenager</strong> for  that matter.
                         </div>
                     </div>
                 </div>
