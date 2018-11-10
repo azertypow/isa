@@ -119,6 +119,7 @@
         }
 
         .contact & {
+            color: $color-light;
 
             .contact {
                 text-decoration: line-through;

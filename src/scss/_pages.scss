@@ -10,7 +10,6 @@
   padding-top: $gutter-width * 4;
   padding-bottom: $gutter-width * 4;
   transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
-  transform: translateY(100vh);
   opacity: 1;
 
   @if($type == "dark") {
@@ -24,21 +23,38 @@
 }
 
 .v-pages-wrap {
+
+  @mixin previous {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  @mixin current {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  @mixin next {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  @mixin rm {
+    display: none;
+  }
+
   &.introduction {
-    .v-introduction {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    .v-introduction { @include current;  }
+    .v-description  { @include next;   }
+    .v-contact      { @include rm;      }
   }
 
   &.description {
-    .v-introduction {
-      transform: translateY(-50vh);
-      opacity: 0;
-    }
-    .v-description {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    .v-introduction { @include previous;  }
+    .v-description  { @include current;   }
+    .v-contact      { @include next;      }
+  }
+
+  &.contact {
+    .v-introduction { @include rm;  }
+    .v-description  { @include previous;   }
+    .v-contact      { @include current;      }
   }
 }

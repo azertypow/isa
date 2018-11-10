@@ -14,18 +14,27 @@
                 v-on:previousPage="getPreviousPage"
         />
 
+        <Contact
+                v-on:nextPage="getNextPage"
+                v-on:previousPage="getPreviousPage"
+        />
+
+
+
     </div>
 </template>
 
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
+  import {Application} from "./Application/Application";
   import Introduction from "./components/Introduction.vue";
   import AppMenu from "./components/appMenu/AppMenu.vue";
   import Description from "./components/description/Description.vue";
-  import {Application} from "./Application/Application";
+  import Contact from "./components/Contact.vue";
 
   @Component({
     components: {
+      Contact,
       Description,
       AppMenu,
       Introduction,
@@ -37,12 +46,10 @@
     private currentPageName = this.application.currentPage
 
     private getNextPage() {
-      console.log(this.application.nextPage)
       this.currentPageName = this.application.nextPage
     }
 
     private getPreviousPage() {
-      console.log(this.application.previousPage)
       this.currentPageName = this.application.previousPage
     }
   }
