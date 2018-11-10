@@ -1,0 +1,15 @@
+@import "_params-fonts";
+
+@mixin button {
+  all: unset;
+  @include font-reg;
+  display: block;
+  margin: auto;
+  border: solid 2px;
+  padding: $gutter-width / 2;
+}
+
+@mixin button-blue {
+  @include button;
+  color: $color-main;
+}

@@ -28,11 +28,11 @@ p {
 
 em {
   font-style: inherit;
-  color: $color-main;
+  color: $color-main-light;
 }
 
 a {
   color: $color-dark;
   text-decoration: none;
-  border-bottom: solid 2px $color-main;
+  border-bottom: solid 2px $color-main-light;
 }

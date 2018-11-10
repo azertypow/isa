@@ -1,0 +1,51 @@
+@import "_params";
+
+@mixin svg-fil-stroke-colors {
+  .fill- {
+    &none {
+      fill: none;
+    }
+    &white {
+      fill: $color-light;
+    }
+    &main-light {
+      fill: $color-main-light
+    }
+    &main-dark {
+      fill: $color-main-dark;
+    }
+    &main {
+      fill: $color-main;
+    }
+    &secondary {
+      fill: $color-secondary;
+    }
+    &ternary {
+      fill: $color-ternary;
+    }
+  }
+
+  .stroke- {
+    &none {
+      stroke: none;
+    }
+    &white {
+      stroke: $color-light;
+    }
+    &main-light {
+      stroke: $color-main-light;
+    }
+    &main-dark {
+      stroke: $color-main-dark;
+    }
+    &main {
+      stroke: $color-main;
+    }
+    &secondary {
+      stroke: $color-secondary;
+    }
+    &ternary {
+      stroke: $color-ternary;
+    }
+  }
+}

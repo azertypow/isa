@@ -13,8 +13,15 @@ $min-width: 68em;
 //$break-point-md: ;
 
 /* colors */
-$color-dark: #161C2D;
-$color-light: white;
-$color-main: #7DA0FF;
+$color-dark:        hsla(224, 34%, 13%, 1);
+$color-light:       white;
+
+$color-main-light:  hsla(245, 100%, 85%, 1);
+$color-main:        hsla(245, 100%, 50%, 1);
+$color-main-dark:   hsla(245, 100%, 15%, 1);
+
+$color-secondary:   hsla(342, 100%, 50%, 1);
+
+$color-ternary:     hsla(170, 100%, 50%, 1);
 
 /* layout */
