@@ -23,7 +23,10 @@
 }
 
 .v-pages-wrap {
-
+  @mixin previous-rm {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
   @mixin previous {
     transform: translateY(-50vh);
     opacity: 0;
@@ -36,25 +39,36 @@
     transform: translateY(100vh);
     opacity: 1;
   }
-  @mixin rm {
-    display: none;
+  @mixin next-rm {
+    transform: translateY(100vh);
+    opacity: 1;
   }
 
   &.introduction {
     .v-introduction { @include current;  }
     .v-description  { @include next;   }
-    .v-contact      { @include rm;      }
+    .v-contact      { @include next-rm;      }
+    .v-quotation    { @include next-rm;      }
   }
 
   &.description {
     .v-introduction { @include previous;  }
     .v-description  { @include current;   }
     .v-contact      { @include next;      }
+    .v-quotation    { @include next-rm;      }
   }
 
   &.contact {
-    .v-introduction { @include rm;  }
+    .v-introduction { @include previous-rm;  }
     .v-description  { @include previous;   }
     .v-contact      { @include current;      }
+    .v-quotation    { @include next;      }
+  }
+
+  &.quotation {
+    .v-introduction { @include previous-rm;  }
+    .v-description  { @include previous-rm;   }
+    .v-contact      { @include previous;      }
+    .v-quotation    { @include current;      }
   }
 }

@@ -19,7 +19,10 @@
                 v-on:previousPage="getPreviousPage"
         />
 
-
+        <Quotation
+                v-on:nextPage="getNextPage"
+                v-on:previousPage="getPreviousPage"
+        />
 
     </div>
 </template>
@@ -31,13 +34,15 @@
   import AppMenu from "./components/AppMenu.vue";
   import Description from "./components/Description.vue";
   import Contact from "./components/Contact.vue";
+  import Quotation from "./components/Quotation.vue";
 
   @Component({
     components: {
-      Contact,
-      Description,
       AppMenu,
       Introduction,
+      Description,
+      Contact,
+      Quotation,
     },
   })
   export default class App extends Vue {

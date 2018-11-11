@@ -8,6 +8,7 @@ export class Application {
     LIST_OF_PAGES.INTRODUCTION,
     LIST_OF_PAGES.DESCRIPTION,
     LIST_OF_PAGES.CONTACT,
+    LIST_OF_PAGES.QUOTATION,
   ]
 
   constructor(startingPageIndex: number) {
@@ -19,10 +20,6 @@ export class Application {
   }
 
   get nextPage(): LIST_OF_PAGES {
-    console.log("neeext")
-
-    console.log(this._currentPageIndex);
-
     if (this._currentPageIndex + 1 < this._ARRAY_OF_PAGES.length) {
       this._currentPageIndex++
     }
