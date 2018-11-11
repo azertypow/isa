@@ -16,12 +16,13 @@ $min-width: 68em;
 $color-dark:        hsla(224, 34%, 13%, 1);
 $color-light:       white;
 
-$color-main-light:  hsla(245, 100%, 85%, 1);
-$color-main:        hsla(245, 100%, 50%, 1);
-$color-main-dark:   hsla(245, 100%, 15%, 1);
+$color-main-light:        hsla(210, 100%, 85%, 1);
+$color-main:              hsla(210, 100%, 60%, 1);
+$color-main-dark:         hsla(210, 100%, 50%, 1);
+$color-main-dark-extra:   hsla(210, 100%, 15%, 1);
 
 $color-secondary:   hsla(342, 100%, 50%, 1);
 
-$color-ternary:     hsla(170, 100%, 50%, 1);
+$color-ternary:     hsla(170, 90%, 48%, 1);
 
 /* layout */

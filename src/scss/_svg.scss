@@ -12,10 +12,10 @@
       fill: $color-main-light
     }
     &main-dark {
-      fill: $color-main-dark;
+      fill: $color-main-dark-extra;
     }
     &main {
-      fill: $color-main;
+      fill: $color-main-dark;
     }
     &secondary {
       fill: $color-secondary;
@@ -36,10 +36,10 @@
       stroke: $color-main-light;
     }
     &main-dark {
-      stroke: $color-main-dark;
+      stroke: $color-main-dark-extra;
     }
     &main {
-      stroke: $color-main;
+      stroke: $color-main-dark;
     }
     &secondary {
       stroke: $color-secondary;
