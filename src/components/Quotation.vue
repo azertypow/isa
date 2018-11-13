@@ -7,6 +7,26 @@
 
                 <p>Vous pouvez à tout moment prendre contact avec moi :</p>
 
+                <form action="#">
+                    <Input
+                            placeholder="votre nom et/ou prénom"
+                            id="quotation-name"
+                            name="quotation-name"
+                    />
+
+                    <Input
+                            placeholder="votre couriel"
+                            id="quotation-email"
+                            name="quotation-email"
+                    />
+
+                    <label>
+                        <textarea >coucou</textarea>
+                    </label>
+
+                    <input class="send-contact" type="submit" value="envoyer mon contact">
+                </form>
+
             </div>
         </div>
 
@@ -16,8 +36,13 @@
 
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
+  import Input from "./Input.vue";
 
-  @Component
+  @Component({
+    components: {
+      Input
+    }
+  })
     export default class Quotation extends Vue {
 
     }
@@ -26,6 +51,7 @@
 <style lang="scss">
     @import "../scss/pages";
     @import "../scss/_grid";
+    @import "../scss/ui";
 
     .v-quotation {
         @include page-element("white");
@@ -39,6 +65,20 @@
 
         .content {
             @include column(8, 12);
+        }
+
+        textarea {
+            all: unset;
+            resize: none;
+            display: block;
+            border: solid 1px ;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .send-contact {
+            @include button;
+            margin-top: 2em;
         }
     }
 </style>
