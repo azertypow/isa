@@ -16,7 +16,7 @@
             <div class="introduction">introduction</div>
             <div class="description">déscription</div>
             <div class="contact">contact</div>
-            <div class="quotation">devis</div>
+            <div class="quotation">demande de devis</div>
         </div>
 
         <div id="social-share">
