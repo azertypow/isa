@@ -147,6 +147,7 @@
 
             </div>
         </div>
+
         <button class="next-button"     v-on:click="$emit('nextPage')"     >continue</button>
     </section>
 </template>

@@ -1,8 +1,9 @@
 <template>
     <section class="v-introduction">
+        <button class="previous-button" v-on:click="$emit('previousPage')" >return</button>
+
         <div class="wrap">
             <div class="content">
-                <button class="previous-button" v-on:click="$emit('previousPage')" >return</button>
 
                 <p id="site-description">
                     When I first got into the online advertising business,
@@ -10,9 +11,10 @@
                     catapult me to the forefront of the minds or individuals looking to buy my product.
                 </p>
 
-                <button class="next-button"     v-on:click="$emit('nextPage')"     >continue</button>
             </div>
         </div>
+
+        <button class="next-button"     v-on:click="$emit('nextPage')"     >continue</button>
     </section>
 </template>
 
