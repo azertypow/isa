@@ -36,7 +36,7 @@
 
         private getInfo() {
             // this.email = "coucou@gmail.com"
-            const formInfoToValidate = new MailOrPhoneFormValidation()
+            const formInfoToValidate = new FormValidation()
             formInfoToValidate.email        = "2053392@gmail.com"
 
             // @todo implement phone number validation
@@ -47,7 +47,7 @@
 
     }
 
-    function valideMail(objectToValidate: MailOrPhoneFormValidation) {
+    function valideMail(objectToValidate: FormValidation) {
       console.log(validate(objectToValidate))
 
       validate(objectToValidate).then( (result) => {
@@ -55,7 +55,7 @@
       })
     }
 
-    class formValidation {
+    class FormValidation {
         @IsEmail() public email?: string
 
       // @todo implement phone number validation
