@@ -1,7 +1,7 @@
 <template>
     <section class="v-app-menu" >
         <h1 id="site-title">
-            Isa<br>Jaquier&#8209;Borella
+            Isa Jaquier&#8209;Borella
         </h1>
 
         <div id="site-page-name">{{this.pageName}}</div>
