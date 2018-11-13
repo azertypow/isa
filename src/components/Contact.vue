@@ -28,6 +28,9 @@
                                 </g>
                             </svg>
                         </div>
+
+                        <div>par courriel</div>
+                        <div>hello@isa.ch</div>
                     </div>
 
                     <div class="column">
@@ -49,10 +52,13 @@
                                 </g>
                             </svg>
                         </div>
+
+                        <div>par telephone</div>
+                        <div>+4422089786</div>
                     </div>
 
                     <div class="column">
-                        <dic class="icon">
+                        <div class="icon">
                             <svg width="75px" height="67px" viewBox="0 0 75 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Exportable-Copy" transform="translate(-880.000000, -4456.000000)">
@@ -66,7 +72,10 @@
                                     </g>
                                 </g>
                             </svg>
-                        </dic>
+                        </div>
+
+                        <div>sur linkedin</div>
+                        <div>linkdin</div>
                     </div>
                 </div>
 
