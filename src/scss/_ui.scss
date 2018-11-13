@@ -7,6 +7,7 @@
   margin: auto;
   border: solid 2px;
   padding: $gutter-width / 2;
+  cursor: pointer;
 }
 
 @mixin button-blue {

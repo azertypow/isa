@@ -30,6 +30,12 @@
   font-weight: 400;
 }
 
+@mixin font-s {
+  font-size: .75em;
+  line-height: 1em;
+  font-weight: 400;
+}
+
 @mixin font-init {
   @include font-reg;
   font-size: $font-size;

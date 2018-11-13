@@ -76,7 +76,13 @@
                 </p>
 
                 <form action="#">
-                    <input type="text" placeholder="entrez votre couriel ou votre numéro de téléphone">
+                    <Input
+                            placeholder="couriel ou votre numéro de téléphone"
+                            id="info-to-send"
+                            name="mail or phone"
+                    />
+
+                        <input class="send-contact" type="submit" value="envoyer mon contact">
                 </form>
             </div>
         </div>
@@ -87,16 +93,22 @@
 
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
+  import Input from "./Input.vue";
 
-  @Component
+  @Component({
+    components: {
+      Input,
+    },
+  })
     export default class Contact extends Vue {
-
+      get isFrench() {return true}
     }
 </script>
 
 <style lang="scss">
     @import "../scss/pages";
     @import "../scss/_grid";
+    @import "../scss/ui";
 
     .v-contact {
         @include page-element("dark");
@@ -125,6 +137,11 @@
                 display: block;
                 margin: auto;
             }
+        }
+
+        .send-contact {
+            @include button;
+            margin-top: 2em;
         }
     }
 </style>
